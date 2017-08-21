@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- autofocus : 페이지가 시작하자마자 해당 부분으로 커서 주기 -->
+    <form action="login.php">
+      <input type="text" name="id" placeholder="id를 입력해주세요" autofocus>
+      <input type="password" name="password" placeholder="pw를 입력해주세요">
+      <input type="submit">
+    </form>
+
+    <!-- validation checking -->
+
+    <form action="register.php">
+      <!-- required : 반드시 입력해야 넘어감 -->
+      <!-- pattern : 정규표현식, [범위지정].(포인트)찍으면 그 뒤로는 아무 문자나 상관없음 -->
+      <!-- .+ : 어떤 문자건 하나 이상 와야함 -->
+      <!-- [a-zA-Z].+[0-9] 끝에가 숫자로 끝나야함-->
+      <input type="text" name="id" placeholder="아이디를 입력해주세요" required pattern="[a-zA-Z].">
+      <input type="email" name="email" placeholder="이메일 입력">
+      <input type="submit">
+    </form>
+  </body>
+</html>

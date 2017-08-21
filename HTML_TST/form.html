@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <body>
+      <form action="http://localhost/login.php">
+        <p>아이디 : <input type="text" name=id"" value="ID"></p>
+        <p>비밀번호 : <input type="password" name="pw" value=""></p>
+        <p>주소 : <input type="text" name="adress" value="ADDRESS"></p>
+        <input type="submit">
+        <p>textarea : <textarea name="txtarea" rows="8" cols="80"></textarea></p>
+      </form>
+
+<!-- select /-->
+      <form class="" action="2.html">
+        <h1>색상</h1>
+          <select class="" name="colour">
+            <option value="red">빨강</option>
+            <option value="black">검정</option>
+            <option value="blue">파랑</option>
+          </select>
+          <input type="submit">
+
+          <h1>색상2</h1>
+            <select class="" name="colour2" multiple>
+              <option value="red">빨강</option>
+              <option value="black">검정</option>
+              <option value="blue">파랑</option>
+            </select>
+            <input type="submit">
+      </form>
+
+<!-- button -->
+<p>
+      <form class="" action="index.html" method="post">
+        <input type="submit" value="전송">
+        <input type="button" value="버튼" onclick="alert("HELLO WORLD")">
+        <input type="reset" value="재설정">
+      </form>
+</p>
+
+
+<!-- hidden -->
+<p>
+      <form class="" action="3.html">
+        <input type="text" name="id">
+        <input type="hidden" name="hide" value="egoing">
+        <input type="submit" value="전송">
+      </form>
+</p>
+
+<!-- lable -->
+<p>
+  <!-- "for" in labe and "id" in input is connected.
+      if you click the label area on the web page, the cursor in the txt area will be flushed  -->
+  <label for="id_txt">아이디 : </label>
+    <input id="id_txt" type="text" name="id"></p>
+  <p>
+    <!-- 비밀번호 : 전체가 label id가 됨 -->
+    <label for="password">비밀번호 :
+      <input type="password" name="pw" value="">
+    </label>
+  </p>
+    <!-- 붉은색 글씨 영역 클릭시에도 체크박스 동작함 -->
+    <label>
+      <input type="checkbox" name="colour" value="red"> 붉은색
+    </label>
+  <input type="submit">
+</p>
+
+
+    </body>
+</head>
+</html>
